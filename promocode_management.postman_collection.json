@@ -1,0 +1,116 @@
+{
+	"id": "94b34bd6-6f36-838b-14e9-5c46ddd7d676",
+	"name": "promocode_management",
+	"description": "",
+	"order": [
+		"d4806d86-9f4d-bff1-0f7f-6557e7bef090",
+		"402ed7a3-b580-eac3-2329-612a4797aa20"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1591462370203,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "402ed7a3-b580-eac3-2329-612a4797aa20",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4020/admin/createPromocode",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "promocode",
+					"value": "Test1",
+					"description": ""
+				},
+				{
+					"key": "startDate",
+					"value": "02/03/2020",
+					"description": ""
+				},
+				{
+					"key": "endDate",
+					"value": "03/30/2020",
+					"description": ""
+				},
+				{
+					"key": "minAge",
+					"value": "12",
+					"description": ""
+				},
+				{
+					"key": "gender",
+					"value": "female",
+					"description": ""
+				},
+				{
+					"key": "region",
+					"value": "India",
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591465505110,
+			"name": "Create Promoce",
+			"description": "",
+			"collectionId": "94b34bd6-6f36-838b-14e9-5c46ddd7d676",
+			"responses": []
+		},
+		{
+			"id": "d4806d86-9f4d-bff1-0f7f-6557e7bef090",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4020/applyPromocode",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "promocode",
+					"value": "Test1",
+					"description": ""
+				},
+				{
+					"key": "userId",
+					"value": "1",
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591466694482,
+			"name": "Apply Promocode",
+			"description": "",
+			"collectionId": "94b34bd6-6f36-838b-14e9-5c46ddd7d676",
+			"responses": []
+		}
+	]
+}
